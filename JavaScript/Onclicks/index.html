@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Petlopedia</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Petlopedia edicion monster hunter</h1>
+  <input type="text" placeholder="Buscar mascotas">
+  <button id="loginBtn" onclick="toggleLogin()">Iniciar sesión</button>
+</header>
+
+<main>
+  <div class="entries">
+    <div class="card">
+      <h2>Tigrex</h2>
+      <p class="pos">sustantivo</p>
+      <p class="plural">Plural: Tigrexs</p>
+      <p class="definition">Un wyvern volador de obvio origen evolutivo. Hace gala de una increíble ferocidad con sus zarpas, fauces y desarrollados miembros. ¡Cuidado con su atronador rugido!</p>
+      <span class="likes" onclick="likeDefinition('Tigrex')">22 me gusta</span>
+    </div>
+
+    <div class="card">
+      <h2>Lunagaron</h2>
+      <p class="pos">sustantivo</p>
+      <p class="plural">Plural: Lunagarones</p>
+      <p class="definition">Una pálida luz de luna apenas logra atravesar las nubes. Una criatura vaga inquieta por la oscuridad. Avanza con paso firme, sin aminorar la marcha; su cuerpo, esculpido a la perfección. Finalmente, las nubes se abren y la luna se deja ver. Una luz plateada ilumina la tierra y las montañas. La criatura danza, corre y vibra con un poder desenfrenado. Y, con un rugido hipnótico, revela su verdadera forma.
+
+</p>
+      <span class="likes" onclick="likeDefinition('Lunagaron')">45 me gusta</span>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <p>Petlopedia está definida por TI</p>
+    <button id="addDefBtn" onclick="hideAddDef()">Agregar Definición</button>
+  </div>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
