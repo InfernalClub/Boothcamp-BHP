@@ -1,0 +1,209 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+.nav{
+    background:#333;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+}
+
+.menu{
+    display:flex;
+    align-items:center;
+    gap:35px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.logout{
+    padding:12px 22px;
+    border:none;
+    border-radius:5px;
+    background:#18b8d6;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.page{
+    width:100%;
+    margin:30px auto;
+    padding:0 30px;
+    display:flex;
+    gap:30px;
+    align-items:flex-start;
+}
+
+.left{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.right{
+    width:380px;
+    flex-shrink:0;
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+
+.banner{
+    height:150px;
+    background:#ff0202;
+}
+
+.content{
+    padding:0 40px 35px;
+}
+
+.pic{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+    margin-top:-55px;
+}
+
+.name{
+    font-size:54px;
+    margin-top:20px;
+    color:#333;
+}
+
+.city{
+    margin-top:18px;
+    font-size:24px;
+    color:#555;
+}
+
+.bio{
+    margin-top:18px;
+    font-size:22px;
+    color:#555;
+}
+
+.about{
+    margin-top:25px;
+    font-size:22px;
+    color:#555;
+    line-height:1.4;
+}
+
+.btn{
+    margin-top:30px;
+    padding:12px 28px;
+    font-size:18px;
+    border:none;
+    border-radius:5px;
+    background:#ececec;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:#ddd;
+}
+
+.small{
+    padding:30px;
+}
+
+.small h2{
+    font-size:44px;
+    margin-bottom:25px;
+}
+
+.small p{
+    font-size:22px;
+    margin:10px 0;
+}
+
+.side{
+    padding:30px;
+}
+
+.side h2{
+    font-size:32px;
+    margin-bottom:25px;
+}
+
+.person,
+.friend{
+    display:flex;
+    align-items:center;
+    margin:20px 0;
+}
+
+.person img,
+.friend img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-right:18px;
+}
+
+.person span,
+.friend span{
+    flex:1;
+    font-size:24px;
+}
+
+.accept,
+.decline{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    border:2px solid #18b8d6;
+    background:white;
+    color:#18b8d6;
+    font-size:22px;
+    cursor:pointer;
+    margin-left:10px;
+}
+
+@media (max-width:1000px){
+
+    .page{
+        flex-direction:column;
+    }
+
+    .right{
+        width:100%;
+    }
+
+    .name{
+        font-size:42px;
+    }
+
+    .bio,
+    .about,
+    .city{
+        font-size:20px;
+    }
+}

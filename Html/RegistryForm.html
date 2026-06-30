@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registry Homework</title>
+</head>
+<body>
+    <h1>¡Regístrate y únete a la comunidad!</h1>
+    <form>
+        <p>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name">
+        </p>
+        <p>
+            <label for="lastname">Apellido:</label>
+            <input type="text" id="lastname" name="lastname">
+        </p>
+        <p>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email">
+        </p>
+        <p>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password">
+        </p>
+        <p>
+            <label for="confirm">Confirmar contraseña:</label>
+            <input type="password" id="confirm" name="confirm">
+        </p>
+        <p>
+            <label for="birthdate">Fecha de nacimiento:</label>
+            <input type="date" id="birthdate" name="birthdate">
+            <!--I like to say that my browser is in english, so I saw it as month-day-year, yet it should just look alright in a spanish one -->
+        </p>
+        <p>
+            Género:
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Masculino</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Femenino</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Prefiero no decir</label>
+        </p>
+        <p>
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">
+                Suscríbete a nuestro boletín de noticias
+            </label>
+        </p>
+        <p>
+            <label for="description">Una descripción de mí mismo:</label><br>
+            <textarea id="description" name="description" rows="5" cols="30"></textarea>
+        </p>
+        <p>
+            <label for="interests">Selecciona tus intereses:</label><br>
+            <select id="interests" name="interests" size="4" multiple>
+                <option>Música</option>
+                <option>Deportes</option>
+                <option>Viajes</option>
+                <option>Tecnología</option>
+            </select>
+        </p>
+        <p>
+            <input type="submit" value="¡Registrarse!">
+        </p>
+    </form>
+</body>
+</html>
